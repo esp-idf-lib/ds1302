@@ -1,7 +1,7 @@
 ---
 name: ds1302
 description: Driver for DS1302 RTC module
-version: 1.1.0
+version: 1.1.1
 groups:
   - rtc
 code_owners:

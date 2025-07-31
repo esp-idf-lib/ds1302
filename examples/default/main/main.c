@@ -5,7 +5,8 @@
 
 void ds1302_test(void *pvParameters)
 {
-    ds1302_t dev = {
+    ds1302_t dev =
+    {
         .ce_pin = CONFIG_EXAMPLE_CE_GPIO,
         .io_pin = CONFIG_EXAMPLE_IO_GPIO,
         .sclk_pin = CONFIG_EXAMPLE_SCLK_GPIO
@@ -15,7 +16,8 @@ void ds1302_test(void *pvParameters)
     ESP_ERROR_CHECK(ds1302_set_write_protect(&dev, false));
 
     // setup datetime: 2018-04-11 00:52:10
-    struct tm time = {
+    struct tm time =
+    {
         .tm_year = 118, //year since 1900 (2018 - 1900)
         .tm_mon  = 3,  // 0-based
         .tm_mday = 11,
@@ -31,7 +33,7 @@ void ds1302_test(void *pvParameters)
         ds1302_get_time(&dev, &time);
 
         printf("%04d-%02d-%02d %02d:%02d:%02d\n", time.tm_year + 1900 /*Add 1900 for better readability*/, time.tm_mon + 1,
-            time.tm_mday, time.tm_hour, time.tm_min, time.tm_sec);
+               time.tm_mday, time.tm_hour, time.tm_min, time.tm_sec);
 
         vTaskDelay(pdMS_TO_TICKS(500));
     }

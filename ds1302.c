@@ -198,9 +198,9 @@ esp_err_t ds1302_init(ds1302_t *dev)
     memset(&io_conf, 0, sizeof(gpio_config_t));
     io_conf.mode = GPIO_MODE_OUTPUT;
     io_conf.pin_bit_mask =
-            GPIO_BIT(dev->ce_pin) |
-            GPIO_BIT(dev->io_pin) |
-            GPIO_BIT(dev->sclk_pin);
+        GPIO_BIT(dev->ce_pin) |
+        GPIO_BIT(dev->io_pin) |
+        GPIO_BIT(dev->sclk_pin);
     CHECK(gpio_config(&io_conf));
 
     bool r;
@@ -279,7 +279,8 @@ esp_err_t ds1302_set_time(ds1302_t *dev, const struct tm *time)
 {
     CHECK_ARG(dev && time);
 
-    uint8_t buf[8] = {
+    uint8_t buf[8] =
+    {
         dec2bcd(time->tm_sec) | (dev->ch ? CH_BIT : 0),
         dec2bcd(time->tm_min),
         dec2bcd(time->tm_hour),

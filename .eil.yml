@@ -1,7 +1,7 @@
 ---
 name: ds1302
 description: Driver for DS1302 RTC module
-version: 1.2.0
+version: 1.2.1
 groups:
   - rtc
 code_owners:
@@ -12,18 +12,7 @@ depends:
   - freertos
   - driver
 thread_safe: no
-targets:
-  - esp32
-  - esp32s2
-  - esp32c3
-  - esp32s3
-  - esp32c2
-  - esp32c6
-  - esp32h2
-  - esp32p4
-  - esp32c5
-  - esp32c61
-license: BSD-3
+license: BSD-3-Clause
 copyrights:
   - name: PavelM
     year: 2016

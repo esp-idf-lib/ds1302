@@ -6,6 +6,7 @@ menu "Example configuration"
         default 5 if IDF_TARGET_ESP32H2
         default 5 if IDF_TARGET_ESP32P4
         default 16 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default 16
         help
             GPIO connected to CE pin
 
@@ -15,6 +16,7 @@ menu "Example configuration"
         default 4 if IDF_TARGET_ESP32H2
         default 4 if IDF_TARGET_ESP32P4
         default 17 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default 17
         help
             GPIO connected to I/O pin
 
@@ -24,6 +26,7 @@ menu "Example configuration"
         default 6 if IDF_TARGET_ESP32H2
         default 6 if IDF_TARGET_ESP32P4
         default 18 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default 18
         help
             GPIO connected to SCLK pin
 

@@ -15,4 +15,4 @@ resistors.
 |------|-------------|----------|
 | `CONFIG_EXAMPLE_CE_GPIO` | GPIO number for `CE` | "5" for `esp32c3`, "16" for `esp32`, `esp32s2`, and `esp32s3` |
 | `CONFIG_EXAMPLE_IO_GPIO` | GPIO number for `I/O` | "4" for `esp32c3`, "17" for `esp32`, `esp32s2`, and `esp32s3` |
-| `CONFIG_EXAMPLE_SCLK_GPIO` | GPIO number for `SCLK` | "0" for `esp32c3`, "18" for `esp32`, `esp32s2`, and `esp32s3` |
+| `CONFIG_EXAMPLE_SCLK_GPIO` | GPIO number for `SCLK` | "18" for `esp32`, `esp32s2`, and `esp32s3`, "6" for `esp32c2`, `esp32c3`, `esp32c5`, `esp32c6`, `esp32c61`, `esp32h2`, and `esp32p4` |
